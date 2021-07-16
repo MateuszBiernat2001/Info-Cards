@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background: radial-gradient(circle,rgba(43,44,46,1)13% , rgba(25,25,25,1)65%);
+  font-family: 'Lato';
+}
+.cards{
+  display: flex;
+  width: 1000px
+}
+.card{
+  position: relative;
+  margin: 10px;
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+  width: 800px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.7);
+  overflow: hidden;
+}
+
+.one{
+  background-image: url('https://cdn.pixabay.com/photo/2019/07/28/14/00/travel-4368774_960_720.jpg');
+}
+.two{
+  background-image: url('https://cdn.pixabay.com/photo/2019/04/06/07/08/dubrovnik-4106788_960_720.jpg');
+}
+
+button{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 36px;
+  text-shadow: 5px 5px 10px rgba(0,0,0,0.7);
+  cursor: crosshair;
+  z-index: 10;
+}
+
+.text{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 80px 30px;
+  background-color: rgba(0,0,0,.85);
+  clip-path: circle(0% at 50% 90%);
+  transition: .8s;
+}
+
+button:hover~.text{
+  clip-path: circle(150% at 50% 90%);
+}
+
+h1{
+  font-size: 40px;
+  color: rgba(182,179,97);
+}
+h2{
+  font-size: 38px;
+  margin-bottom: 30px;
+  color: white;
+}
+p{
+  font-size: 29px;
+  color: white;
+}
